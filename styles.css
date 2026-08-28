@@ -71,7 +71,7 @@ nav{
     background-position: center;
     }
 
-    #homeTexts{
+    #homeContent{
         display: flex;
         flex-direction: column;
         justify-content:center;
@@ -85,7 +85,7 @@ nav{
         }
         
     }
-    #homeTextsContainer{
+    #homeTexts{
         display: flex;
         flex-direction: column;
 
@@ -95,18 +95,21 @@ nav{
 #aboutSection{
     background-color: var(--highlight-color);
     display:flex;
-    align-items: center;
-    min-height: calc(100vh - 65px);
+    /* align-items: center;
+    min-height: calc(100vh - 65px); */
     #aboutMeTextsFlexContainer{
         padding-top: 65px;
         width:60vw;
         display:flex;
         justify-content:center;
         align-items:center;      
-
+        
     }
     #aboutMeTextsFlexItem{
        width:80%;
+       text-align: justify;
+       display: flex;
+       flex-direction: column;
         h1{
             font-size:2.8rem;
             text-transform: uppercase;
@@ -366,6 +369,27 @@ p{
             border-radius: 50%;
             margin-bottom: 3.8rem;
         }
+        #HomeTexts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+    }
+    #aboutMePhoto{
+        display:none;
+    }
+    #aboutSection{
+        #aboutMeTextsFlexContain{
+            width: 100vw;
+            #aboutMeTextsFlexIte{
+                align-items: center;
+            }
+        }
+    }
+}
+@media (max-width: 750px){
+    nav{
+        display: none;
     }
 }
